@@ -1,0 +1,39 @@
+{
+  "name": "deadliner-skills",
+  "version": "1.0.0",
+  "description": "Penyelamat Mahasiswa H-1 Ujian: Universal Multi-Agent Skill & CLI to extract LMS courses, analyze slides/quizzes/videos, synthesize Q&A banks, and compile academic PDFs",
+  "main": "bin/cli.js",
+  "bin": {
+    "deadliner": "./bin/cli.js",
+    "deadliner-skills": "./bin/cli.js",
+    "lms-extractor": "./bin/cli.js"
+  },
+  "scripts": {
+    "start": "node ./bin/cli.js"
+  },
+  "keywords": [
+    "antigravity",
+    "cursor",
+    "claude-code",
+    "windsurf",
+    "copilot",
+    "cline",
+    "roo-code",
+    "moodle",
+    "lms",
+    "telkom-university",
+    "pdf-generator",
+    "reportlab",
+    "agent-skills"
+  ],
+  "author": "Ov3rkill15 <lwnsryd24@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ov3rkill15/deadliner-skills.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ov3rkill15/deadliner-skills/issues"
+  },
+  "homepage": "https://github.com/Ov3rkill15/deadliner-skills#readme",
+  "license": "MIT"
+}
