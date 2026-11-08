@@ -1,6 +1,6 @@
 {
   "name": "deadliner-skills",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Penyelamat Mahasiswa H-1 Ujian: Universal Multi-Agent Skill & CLI to extract LMS courses, analyze slides/quizzes/videos, synthesize Q&A banks, and compile academic PDFs",
   "main": "bin/cli.js",
   "bin": {

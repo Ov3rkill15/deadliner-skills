@@ -2,6 +2,8 @@
 > **Penyelamat Mahasiswa H-1 Ujian & Tugas Kuliah**  
 > Universal Multi-Agent Skills & Standalone CLI for Google Antigravity, Cursor, Claude Code, Windsurf, GitHub Copilot, and Roo Code/Cline.
 
+[![npm version](https://img.shields.io/npm/v/deadliner-skills.svg?color=red&logo=npm)](https://www.npmjs.com/package/deadliner-skills)
+[![npm downloads](https://img.shields.io/npm/dm/deadliner-skills.svg?logo=npm)](https://www.npmjs.com/package/deadliner-skills)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Agents](https://img.shields.io/badge/AI%20Agents-Antigravity%20%7C%20Cursor%20%7C%20Claude%20%7C%20Windsurf%20%7C%20Copilot-blue)](README.md)
@@ -9,16 +11,34 @@
 
 ---
 
-## ⚡ Quick Start via NPX
+## ⚡ Quick Start & Installation
 
-Tinggal jalankan satu baris ini di terminal:
+Kamu bisa menjalankan langsung tanpa perlu install, atau install secara global ke sistem:
 
+### Opsi 1: Jalankan Langsung via NPX (Disarankan)
+Tanpa instalasi apa pun, cukup ketik:
 ```bash
 npx deadliner-skills
 ```
-*(Atau alias singkat: `npx deadliner`)*
+*(Atau alias singkatnya:* `npx deadliner`*)*
 
-An interactive menu will guide you to configure your preferred AI coding assistant:
+### Opsi 2: Install Global via NPM
+Jika ingin selalu tersedia di terminal sebagai command bawaan:
+```bash
+npm install -g deadliner-skills
+```
+Setelah terinstall, kamu bisa memanggilnya kapan saja dari folder mana saja:
+```bash
+deadliner
+# atau
+deadliner-skills
+```
+
+---
+
+### 🛠️ Interactive AI Assistant Setup
+
+Saat dijalankan, menu interaktif akan memandu kamu memasang skill ke AI Assistant favorit:
 1. **Google Antigravity** (`~/.gemini/config/skills/` & `GEMINI.md`)
 2. **Cursor IDE** (`.cursorrules` & `.cursor/rules/lms-course-extractor.mdc`)
 3. **Anthropic Claude Code** (`CLAUDE.md` & `~/.claude/`)
@@ -27,15 +47,17 @@ An interactive menu will guide you to configure your preferred AI coding assista
 6. **Roo Code / Cline** (`.clinerules`)
 7. **Install to ALL Platforms at once**
 
-Or directly via CLI flag:
+Atau pasang langsung via flag tanpa buka prompt:
 ```bash
-# Setup for all AI agents:
-npx deadliner-skills setup all
+# Setup sekaligus ke semua AI editor:
+npx deadliner setup all
+# atau jika sudah install global:
+deadliner setup all
 
-# Setup specific editor:
-npx deadliner-skills setup cursor
-npx deadliner-skills setup claude
-npx deadliner-skills setup antigravity
+# Setup ke editor tertentu:
+deadliner setup antigravity
+deadliner setup cursor
+deadliner setup claude
 ```
 
 ---
