@@ -30,12 +30,12 @@ An interactive menu will guide you to configure your preferred AI coding assista
 Or directly via CLI flag:
 ```bash
 # Setup for all AI agents:
-npx lms-course-extractor setup all
+npx deadliner-skills setup all
 
 # Setup specific editor:
-npx lms-course-extractor setup cursor
-npx lms-course-extractor setup claude
-npx lms-course-extractor setup antigravity
+npx deadliner-skills setup cursor
+npx deadliner-skills setup claude
+npx deadliner-skills setup antigravity
 ```
 
 ---
@@ -68,7 +68,7 @@ Your AI Assistant will immediately:
 You can also run the extraction engine directly in terminal without any AI coding assistant:
 
 ```bash
-npx lms-course-extractor run --url "<LMS_COURSE_URL>" --cookie "<MOODLE_SESSION_COOKIE>" --weeks "1-7"
+npx deadliner run --url "<LMS_COURSE_URL>" --cookie "<MOODLE_SESSION_COOKIE>" --weeks "1-7"
 ```
 
 ---
@@ -76,7 +76,7 @@ npx lms-course-extractor run --url "<LMS_COURSE_URL>" --cookie "<MOODLE_SESSION_
 ## 📁 Repository Structure
 
 ```text
-lms-course-extractor/
+deadliner-skills/
 ├── bin/
 │   └── cli.js                     # Zero-dependency interactive NPX runner
 ├── engine/                        # Python extraction & ReportLab engines
