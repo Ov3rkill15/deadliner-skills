@@ -9,7 +9,20 @@
     "lms-extractor": "./bin/cli.js"
   },
   "scripts": {
-    "start": "node ./bin/cli.js"
+    "start": "node ./bin/cli.js",
+    "prepublishOnly": "npm pack --dry-run"
+  },
+  "files": [
+    "bin",
+    "engine",
+    "templates",
+    "README.md",
+    "LICENSE",
+    "DEVELOPING.md",
+    "CONTRIBUTING.md"
+  ],
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [
     "antigravity",
